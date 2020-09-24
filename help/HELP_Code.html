@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Bikester CODEhelp</title>
+</head>
+<body>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+ src="title1.jpg" title="" alt="" style="width: 639px; height: 293px;"><br>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<h1 style="color: rgb(153, 51, 153);">&gt; FEATURES :-</h1>
+<br style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="font-weight: bold; color: rgb(204, 0, 0);">1. Transparent
+Bitblts&nbsp; </span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<br style="color: rgb(0, 102, 0); font-weight: bold;">
+<p style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;&nbsp;&nbsp;
+I think most 2D games that dont use direct X have to use this system.
+But I had to use Pictureboxes to store Bitmap DCs. It would have been
+better if I had&nbsp;&nbsp; used DCs directly.</p>
+<br style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="font-weight: bold; color: rgb(204, 0, 0);">2. Cool Bike
+and Bike speed&nbsp; Kinetics</span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;</span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The Bike dyanamics is a feature which was main concept behind the
+program. The bike speed increase and decrease very realistically. There
+is a value called </span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">friction
+according to which bikes speed decreases when accelerator is not
+pressed. The decrease value also depends on the present speed.&nbsp;
+consider:</span><br style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp; Speed = Speed - Speed*friction&nbsp; </span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">This is very
+close to what happens in real life. So the kinetics seem real.
+Collision detection done on rectangle basis and pixelwise collision is
+not used because i did not fell its real requirenment as such(all
+vehicles represent rectangles more or less).</span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<br style="font-weight: bold; color: rgb(204, 0, 0);">
+<span style="font-weight: bold; color: rgb(204, 0, 0);">3. Great Sounds</span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<br style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The Sound engine is very good. It has 10 streams in all. each
+different. 10 streams were more than i needed so features like
+Restoring prev. souds are absent. But what i dont like about the sound
+system is that i have used a windows mediaplayer contol as a stream.
+this sound unprofessional. But I couldn't&nbsp; find a alternate
+solution aupporting multiple systems. This is a area where i require
+help from all programmers out there. </span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Another good thing about the sounds is that the bikeengine volume
+increases according to bikespeed(In case you haven't noticed yet , next
+time see to it). So when bike is going slow the&nbsp; sounds are slow
+and so on.</span><br style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br
+ style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="font-weight: bold; color: rgb(204, 0, 0);">&nbsp;4. Robust
+Menu System</span><br style="color: rgb(0, 102, 0); font-weight: bold;">
+<br style="color: rgb(0, 102, 0); font-weight: bold;">
+<span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I can't belive I developed such a good Menu System(I am not that Good).
+Adding items to the menu is so Simple. If you studt the code you will
+find out.</span><span style="color: rgb(0, 102, 0); font-weight: bold;"><span
+ style="color: rgb(204, 0, 0);"><br>
+<br>
+5. Enjoyble Gameplay</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You must me knowing
+better than me about this one. Still i can say this Game isn't that
+boring<br>
+<br style="color: rgb(0, 102, 0); font-weight: bold;">
+</span><span style="font-weight: bold; color: rgb(204, 0, 0);">&nbsp;6.
+All resources Loaded from Single file.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+ style="color: rgb(0, 102, 0);">This feature Which I developed
+separately came handy here. this is the .trs structure. You will find
+that the&nbsp; graphics used in the game are not directly present in
+the game directory. They are combined into the Pictures.trs file. when
+the game is loaded a new folder is created all files copyied into
+it.&nbsp; Graphics are loaded From here and if the game is exited
+properly then this folder is deleted at the end and drive space is
+freed. This system is used by most professional games(You wont find the
+pictures in Age of Empires). If you Want the code for the program to
+dit the trs files then see if i have submitted it at <span
+ style="color: rgb(51, 51, 255);">www.planet-source-code.com</span> or
+mail me at <span style="color: rgb(51, 51, 255);">getfun2004@yahoo.com</span>
+But most of the source code is present in this game itself as
+"clstrs.cls" file.. This archive structure is ok but there are some
+drawbacks like it offers no compression and can get slow if worked on
+large files. And the program is not doccumented or commented now.<br>
+<br>
+<span style="color: rgb(255, 0, 0);">7.&nbsp; A Level Editor.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Levels have ini file structure and
+all levels are strored in the levels.blv file. the editor can edit all
+attributes of a level. but it is undoccumented . i will try to
+doccument if i release next version . But you can always ask for help.<br>
+<br>
+<br>
+</span></span>
+<h1 style="color: rgb(153, 51, 153);"><span style="font-weight: bold;">&gt;
+A WORD FORM ME:-</span></h1>
+<h1><span style="font-weight: bold; color: rgb(204, 0, 0);"><span
+ style="color: rgb(0, 102, 0);"></span></span></h1>
+<span style="font-weight: bold; color: rgb(204, 0, 0);"><span
+ style="color: rgb(0, 102, 0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I&nbsp; express my hearty thanks to all the people whose code, ideas ,
+models etc. I have borrowed. Here are some who i can Remember.<br>
+Bike Model- From the Net but Cannot remember site<br>
+Bike Sounds&nbsp; - some&nbsp; racing game.<br>
+<br>
+Please help me if you can&nbsp; with this- Sometimes(only sometimes)
+the frame rate drops very low on my computer although no other programs
+are running in the background. The frame rate does not increase till I
+run any other Direct X game and quit it. To rectify it what i did is I
+initialised DirectX and terminted it immediately(coz it is not used in
+the game) But i want to know What really happens. How directX releases
+resources that GDIFlush function does not. If you can help me then help.<br>
+<br>
+Last of all dont forget to vote or send comments at <span
+ style="color: rgb(51, 51, 255);">getfun2004@yahoo.com</span>. If i get
+enough responce then i will try to add some more features like effects,
+more vehicles etc.<br>
+<br>
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+<br style="font-weight: bold;">
+</span></span><span style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+</body>
+</html>
